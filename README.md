@@ -1,6 +1,6 @@
 # Personal Website 2.0
 
-This repository holds an ASP.NET Core (MVC) project for my personal website that will be used for my final year at (Aston) university.
+This repository holds an ASP.NET Core (3.3, MVC) project for my personal website that will be used for my final year at (Aston) university.
 
 You can find a link to the site [here](https://www.johnny-le.me)!
 
