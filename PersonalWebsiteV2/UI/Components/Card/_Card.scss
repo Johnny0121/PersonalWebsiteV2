@@ -1,0 +1,78 @@
+﻿@import '../../_Variables.scss';
+@import '../../_Mixins.scss';
+
+.card {
+    border-radius: $border-radius;
+    background-color: white;
+    color: $primary-colour;
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+
+    @include padding;
+    @include borderRadius;
+
+    &--max-width {
+        width: 100%;
+    }
+
+    &--shadowed {
+        box-shadow: $box-shadow;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &__header {
+        @include padding;
+        display: block;
+    }
+
+    &__heading {
+        font-weight: normal;
+        font-size: $font-size--double;
+        color: $primary-colour;
+
+        @include fontSize;
+    }
+
+    &__content {
+        @include backgroundColour;
+        @include padding;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        display: block;
+        list-style-type: none;
+
+        &-item {
+            text-align: left;
+            padding: $spacing/1.5 $spacing*2;
+            display: block;
+        }
+
+        &-item-icon {
+            color: $disabled-colour;
+            font-size: $font-size;
+            margin-right: $spacing;
+            @include fontSize;
+        }
+    }
+}
+
+.cards-container {
+    margin-bottom: $spacing * 6;
+
+    > .card:not(:last-child) {
+        margin-bottom: $spacing * 2;
+        margin-right: $spacing * 2;
+    }
+
+    &--wrap-2 {
+        > .card {
+            width: 40%;
+        }
+    }
+}

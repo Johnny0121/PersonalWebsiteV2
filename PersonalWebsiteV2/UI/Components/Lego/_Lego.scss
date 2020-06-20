@@ -1,0 +1,19 @@
+﻿@import '../../Variables.scss';
+@import '../../Mixins.scss';
+
+.lego {
+    border: 1px solid red;
+    display: inline-block;
+    padding: $spacing/2 $spacing;
+    margin-right: $spacing / 1.5;
+    margin-bottom: $spacing / 2;
+
+    @include colour;
+    @include backgroundColour;
+}
+
+.lego-group {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}

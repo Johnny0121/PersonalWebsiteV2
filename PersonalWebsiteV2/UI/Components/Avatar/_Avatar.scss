@@ -1,0 +1,9 @@
+﻿@import '../../Variables.scss';
+
+.avatar {
+    margin: auto;
+    border-radius: 100px;
+    width: 125px;
+    height: 125px;
+    box-shadow: $box-shadow;
+}

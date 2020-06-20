@@ -1,0 +1,11 @@
+﻿@import '../../Variables.scss';
+@import '../../Mixins.scss';
+
+.title {
+    @include fontSize;
+
+    &-style-1 {
+        border-left: $spacing/3 solid $secondary-colour;
+        padding-left: $spacing;
+    }
+}

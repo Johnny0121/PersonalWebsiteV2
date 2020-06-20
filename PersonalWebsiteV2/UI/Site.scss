@@ -1,0 +1,32 @@
+﻿@import '_Variables.scss';
+@import '_Mixins.scss';
+
+.app {
+    background: rgb(23,194,174);
+    background: linear-gradient(337deg, rgba(23,194,174,1) 6%, rgba(0,121,255,1) 100%);
+}
+
+.main {
+    font-family: Roboto, Helvetica, Arial;
+    margin: auto;
+    padding-top: 3rem;
+    max-width: 70%;
+}
+
+#profile-card {
+    min-width: 300px;
+}
+
+#profile-card, #about-me-card {
+    height: 570px;
+}
+
+@import 'Components/Flex/_Flex.scss';
+@import 'Components/Button/_Button.scss';
+@import 'Components/Card/_Card.scss';
+@import 'Components/Avatar/_Avatar.scss';
+@import 'Components/Container/_Container.scss';
+@import 'Components/Icon/_Icon.scss';
+@import 'Components/Title/_Title.scss';
+@import 'Components/Lego/_Lego.scss';
+@import 'Components/Timeline/_Timeline.scss';

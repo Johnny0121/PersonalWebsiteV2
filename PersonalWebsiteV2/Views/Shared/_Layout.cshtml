@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Johnny Le</title>
+    <partial name="Imports/External/_Links" />
+    <partial name="Imports/Internal/_Links" />
+</head>
+<body id="app" class="app">
+    @*<partial name="MainComponent/_Navigation" />*@
+    <main class="main" role="main">
+        @RenderBody()
+    </main>
+    @*<partial name="MainComponent/_Footer" />*@
+
+    <partial name="Imports/External/_Scripts" />
+    <partial name="Imports/Internal/_Scripts" />
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,6 @@
+﻿@import '../../Variables.scss';
+@import '../../Mixins.scss';
+
+.container {
+    @include padding;
+}

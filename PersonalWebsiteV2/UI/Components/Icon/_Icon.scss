@@ -1,0 +1,21 @@
+﻿@import '../../Variables.scss';
+@import '../../Mixins.scss';
+
+.icon {
+    @include fontSize;
+
+    &--inline {
+        margin-right: $spacing / 1.5;
+    }
+}
+
+.icon-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > .icon:not(:last-child) {
+        margin-right: $spacing--double;
+    }
+}

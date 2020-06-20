@@ -1,0 +1,25 @@
+﻿@import '../../Variables.scss';
+
+.timeline {
+    border-left: 3px dotted $secondary-colour;
+    padding-left: $spacing;
+
+    &__item {
+        margin-bottom: $spacing * 3;
+    }
+
+    &__timestamp {
+        text-transform: uppercase;
+        color: $disabled-colour;
+        font-size: $font-size;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 300;
+
+        &--bold {
+            font-weight: 500;
+        }
+    }
+}

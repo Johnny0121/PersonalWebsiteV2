@@ -1,0 +1,25 @@
+﻿@import '../../Variables.scss';
+@import '../../Mixins.scss';
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    padding: $spacing/1.5 $spacing*3;
+    border-radius: 50px;
+
+    @include animateConfig;
+    @include backgroundColour;
+    @include colour;
+
+    &:hover {
+        color: darken($tertiary-colour, 20%);
+    }
+}
+
+.button-group {
+    padding: $spacing 0;
+
+    > .button:not(:last-child) {
+        margin-right: $spacing;
+    }
+}
