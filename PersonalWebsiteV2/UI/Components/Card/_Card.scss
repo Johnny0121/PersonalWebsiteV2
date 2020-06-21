@@ -52,6 +52,11 @@
             text-align: left;
             padding: $spacing/1.5 $spacing*2;
             display: block;
+            text-align: center;
+
+            @media(min-width: 1200px) {
+                text-align: left;
+            }
         }
 
         &-item-icon {
@@ -67,7 +72,7 @@
     margin-bottom: $spacing * 6;
 
     > .card:not(:last-child) {
-        @media(min-width: 1600px) {
+        @media(min-width: 1200px) {
             margin-right: $spacing * 2;
         }
 

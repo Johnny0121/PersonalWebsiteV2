@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "UI/Site.css",
+    "inputFile": "UI/Site.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/Site.css",
+    "inputFile": "UI/Site.scss"
+  },
+  {
+    "outputFile": "wwwroot/js/modules/Avatar.es5.js",
+    "inputFile": "wwwroot/js/modules/Avatar.js"
+  }
+]
