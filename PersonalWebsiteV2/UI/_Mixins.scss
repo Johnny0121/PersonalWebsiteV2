@@ -29,6 +29,50 @@
     }
 }
 
+@mixin backgroundColourInteractive {
+    &--bg-interactive {
+        &-primary {
+            background-color: $primary-colour;
+
+            &:hover {
+                background-color: darken($primary-colour, 10%);
+            }
+        }
+
+        &-secondary {
+            background-color: $secondary-colour;
+
+            &:hover {
+                background-color: darken($secondary-colour, 10%);
+            }
+        }
+
+        &-tertiary {
+            background-color: $tertiary-colour;
+
+            &:hover {
+                background-color: darken($tertiary-colour, 10%);
+            }
+        }
+
+        &-grey {
+            background-color: #EEEEEE;
+
+            &:hover {
+                background-color: darken(#EEEEEE, 10%);
+            }
+        }
+
+        &-disabled {
+            background-color: $disabled-colour;
+
+            &:hover {
+                background-color: darken($disabled-colour, 10%);
+            }
+        }
+    }
+}
+
 @mixin colour {
     &--primary {
         color: $primary-colour;
@@ -44,6 +88,43 @@
 
     &-disabled {
         color: $disabled-colour;
+    }
+}
+
+@mixin colourInteractive {
+    @include animateConfig;
+    cursor: pointer;
+
+    &--primary-interactive {
+        color: $primary-colour;
+
+        &:hover {
+            color: darken($primary-colour, 10%);
+        }
+    }
+
+    &--secondary-interactive {
+        color: $secondary-colour;
+
+        &:hover {
+            color: darken($secondary-colour, 10%);
+        }
+    }
+
+    &--tertiary-interactive {
+        color: $tertiary-colour;
+
+        &:hover {
+            color: darken($tertiary-colour, 10%);
+        }
+    }
+
+    &--disabled-interactive {
+        color: $disabled-colour;
+
+        &:hover {
+            color: darken($disabled-colour, 10%);
+        }
     }
 }
 

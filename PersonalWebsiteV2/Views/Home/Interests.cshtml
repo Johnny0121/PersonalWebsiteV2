@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Interests";
+}
+
+
+<div class="cards-container flex">
+    <partial name="MainComponent/_Profile" />
+    <div id="content-card" class="card card--shadowed">
+        <div class="card__header card__header--p-h-2 card__header--p-b-2">
+            <h1 class="card__heading"><strong>Interests and Hobbies</strong></h1>
+            <br />
+            <br />
+            <div class="button-group">
+                <a class="button button--tertiary button--bg-secondary" asp-controller="Home" asp-action="Index"><i class="icon icon--inline fas fa-caret-left"></i>Home</a>
+                <a class="button button--tertiary button--secondary" asp-controller="Home" asp-action="Academics">Academics</a>
+                <a class="button button--tertiary button--bg-secondary" asp-controller="Home" asp-action="Experience">Experience</a>
+                <a href="#" class="button button--disabled button--tertiary button--bg-disabled"><i class="icon icon--inline fas fa-download"></i>Resume</a>
+            </div>
+        </div>
+        <div class="card__content card__content--p-h-2">
+            <h1 class="title title--size-3 title-style-1"><strong>Interests</strong></h1>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <ul>
+                        <li>UX design</li>
+                        <li>Database</li>
+                        <li>Microservices</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class="title title--size-3 title-style-1"><strong>Hobbies</strong></h1>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <ul>
+                        <li>Bouldering &amp; Mountaineering</li>
+                        <li>Aston Computer Science Society</li>
+                        <li>Eastern Languages</li>
+                        <li>Badminton</li>
+                        <li>Instant Noodles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card__content card__content--p-h-2">
+            <p>Sorry if there's not much on my personal website. I'm hoping to fill this out with a bunch of experiences and skills throughout the future!</p>
+            <p>In the mean time, here's a cool low-resolution photo for you to stare at.</p>
+
+            <div class="container container--shadowed" style="overflow-x: auto;">
+                <img style="overflow-x: hidden; border-radius: 5px;" src="~/resource/media/images/photos/wm_jug_happy.jpg"/>
+            </div>
+        </div>
+    </div>
+</div>

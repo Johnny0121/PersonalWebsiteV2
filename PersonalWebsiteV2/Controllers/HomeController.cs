@@ -23,6 +23,21 @@ namespace PersonalWebsiteV2.Controllers
             return View();
         }
 
+        public IActionResult Experience()
+        {
+            return View();
+        }
+
+        public IActionResult Academics()
+        {
+            return View();
+        }
+
+        public IActionResult Interests()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

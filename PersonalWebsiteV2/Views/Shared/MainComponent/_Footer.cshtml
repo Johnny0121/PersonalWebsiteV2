@@ -1,5 +1,9 @@
-﻿<footer class="border-top footer text-muted">
+﻿<footer class="footer flex flex--center">
     <div class="container">
-        &copy; 2020 - PersonalWebsiteV2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <ul class="list list--horizontal">
+            <li class="list__item"><a class="list__item--link" asp-controller="Home" asp-action="Interests"><strong>Interests</strong></a></li>
+            <li class="list__item list__item--disabled">Privacy</li>
+            <li class="list__item list__item--disabled">CMS Login</li>
+        </ul>
     </div>
 </footer>

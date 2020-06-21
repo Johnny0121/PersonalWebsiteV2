@@ -1,0 +1,13 @@
+﻿@import '../../Variables.scss';
+@import '../../Mixins.scss';
+
+.tag {
+    cursor: default;
+    text-decoration: none;
+    padding: $spacing/1.5 $spacing*3;
+    border-radius: 50px;
+
+    @include animateConfig;
+    @include backgroundColour;
+    @include colour;
+}

@@ -3,9 +3,19 @@
 
 .icon {
     @include fontSize;
+    @include colourInteractive;
 
     &--inline {
         margin-right: $spacing / 1.5;
+    }
+
+    &--interactive {
+        cursor: pointer;
+    }
+
+    &--link {
+        display: inline-block;
+        margin: 0 $spacing / 1.5;
     }
 }
 

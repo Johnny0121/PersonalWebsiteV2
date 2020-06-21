@@ -1,1 +1,3 @@
-﻿var scrollBar
+﻿$(document).ready(function () {
+    avatarModule;
+});

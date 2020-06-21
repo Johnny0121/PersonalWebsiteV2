@@ -2,11 +2,12 @@
 @import '../../Mixins.scss';
 
 .lego {
-    border: 1px solid red;
     display: inline-block;
     padding: $spacing/2 $spacing;
     margin-right: $spacing / 1.5;
     margin-bottom: $spacing / 2;
+    background-color: $primary-colour;
+    color: white;
 
     @include colour;
     @include backgroundColour;

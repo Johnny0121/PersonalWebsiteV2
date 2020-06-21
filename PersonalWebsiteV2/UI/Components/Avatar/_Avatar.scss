@@ -1,9 +1,17 @@
 ﻿@import '../../Variables.scss';
 
 .avatar {
-    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin: $spacing auto;
     border-radius: 100px;
-    width: 125px;
-    height: 125px;
-    box-shadow: $box-shadow;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.45);
+    border: 2px solid $tertiary-colour;
+
+    > img {
+        display: none;
+    }
 }

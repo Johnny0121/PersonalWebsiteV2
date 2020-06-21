@@ -48,6 +48,7 @@
         list-style-type: none;
 
         &-item {
+            cursor: default;
             text-align: left;
             padding: $spacing/1.5 $spacing*2;
             display: block;
@@ -66,8 +67,11 @@
     margin-bottom: $spacing * 6;
 
     > .card:not(:last-child) {
+        @media(min-width: 1600px) {
+            margin-right: $spacing * 2;
+        }
+
         margin-bottom: $spacing * 2;
-        margin-right: $spacing * 2;
     }
 
     &--wrap-2 {

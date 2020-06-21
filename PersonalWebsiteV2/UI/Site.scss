@@ -4,21 +4,46 @@
 .app {
     background: rgb(23,194,174);
     background: linear-gradient(337deg, rgba(23,194,174,1) 6%, rgba(0,121,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Roboto, Helvetica, Arial;
 }
 
 .main {
-    font-family: Roboto, Helvetica, Arial;
     margin: auto;
     padding-top: 3rem;
     max-width: 70%;
 }
 
-#profile-card {
-    min-width: 300px;
+.footer {
+    color: $tertiary-colour;
 }
 
-#profile-card, #about-me-card {
-    height: 570px;
+#profile-card {
+    width: 100%;
+
+    @media(min-width: 1600px){
+        width: 25%;
+    }
+}
+
+
+
+#content-card {
+    width: 100%;
+
+    @media(min-width: 1600px) {
+        width: 70%;
+    }
+}
+
+#profile-card, #content-card {
+    height: auto;
+    overflow: auto;
+
+    @media(min-width: 1600px) {
+        height: 700px;
+    }
 }
 
 @import 'Components/Flex/_Flex.scss';
@@ -30,3 +55,5 @@
 @import 'Components/Title/_Title.scss';
 @import 'Components/Lego/_Lego.scss';
 @import 'Components/Timeline/_Timeline.scss';
+@import 'Components/List/_List.scss';
+@import 'Components/Tag/_Tag.scss';
