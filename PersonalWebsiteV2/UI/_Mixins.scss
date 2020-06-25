@@ -86,8 +86,12 @@
         color: $tertiary-colour;
     }
 
-    &-disabled {
+    &--disabled {
         color: $disabled-colour;
+    }
+
+    &--link {
+        color: $link-colour;
     }
 }
 

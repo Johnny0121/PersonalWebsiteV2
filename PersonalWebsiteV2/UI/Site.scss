@@ -12,7 +12,7 @@
 .main {
     margin: auto;
     padding-top: 3rem;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .footer {
@@ -55,3 +55,4 @@
 @import 'Components/Timeline/_Timeline.scss';
 @import 'Components/List/_List.scss';
 @import 'Components/Tag/_Tag.scss';
+@import 'Components/Link/_Link.scss';

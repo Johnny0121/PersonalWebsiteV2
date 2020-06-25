@@ -8,7 +8,7 @@
 .main {
   margin: auto;
   padding-top: 3rem;
-  max-width: 70%; }
+  max-width: 80%; }
 
 .footer {
   color: #FFFFFF; }
@@ -69,8 +69,10 @@
     color: #4B5375; }
   .button--tertiary {
     color: #FFFFFF; }
-  .button-disabled {
+  .button--disabled {
     color: #48525E; }
+  .button--link {
+    color: #378AD3; }
   .button--primary {
     background-color: #24292E; }
     .button--primary:hover {
@@ -471,8 +473,10 @@
     color: #4B5375; }
   .lego--tertiary {
     color: #FFFFFF; }
-  .lego-disabled {
+  .lego--disabled {
     color: #48525E; }
+  .lego--link {
+    color: #378AD3; }
   .lego--bg-primary {
     background-color: #24292E; }
   .lego--bg-secondary {
@@ -549,5 +553,23 @@
     color: #4B5375; }
   .tag--tertiary {
     color: #FFFFFF; }
-  .tag-disabled {
+  .tag--disabled {
     color: #48525E; }
+  .tag--link {
+    color: #378AD3; }
+
+.link {
+  text-decoration: none;
+  color: #378AD3; }
+  .link--primary {
+    color: #24292E; }
+  .link--secondary {
+    color: #4B5375; }
+  .link--tertiary {
+    color: #FFFFFF; }
+  .link--disabled {
+    color: #48525E; }
+  .link--link {
+    color: #378AD3; }
+  .link:hover {
+    font-weight: bold; }

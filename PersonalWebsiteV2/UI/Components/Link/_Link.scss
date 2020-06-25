@@ -1,0 +1,13 @@
+﻿@import '../../Variables.scss';
+@import '../../Mixins.scss';
+
+.link {
+    @include colour;
+
+    text-decoration: none;
+    color: $link-colour;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
