@@ -9,4 +9,4 @@ This project does not use a database because I am poor and hosting a database al
 Enjoy :)
 
 - Feel free to critique my code if you see any improvements that could be made
-- Snoopdog is not a dog
+- Snoopdog is not actually a dog
