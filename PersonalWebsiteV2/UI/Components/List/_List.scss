@@ -6,6 +6,7 @@
 
     &--horizontal {
         display: flex;
+        padding-left: 0;
 
         .list {
             &__item {

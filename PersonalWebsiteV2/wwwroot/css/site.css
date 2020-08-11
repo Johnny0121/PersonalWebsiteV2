@@ -90,6 +90,18 @@
   margin-right: 16px;
   margin-bottom: 16px; }
 
+.button-group--responsive {
+  display: block; }
+  .button-group--responsive > .button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box; }
+    @media (min-width: 1200px) {
+      .button-group--responsive > .button {
+        width: auto;
+        text-align: left;
+        box-sizing: inherit; } }
+
 .card {
   border-radius: 0.75rem;
   background-color: white;
@@ -512,7 +524,8 @@
   list-style-type: none;
   font-size: 16px; }
   .list--horizontal {
-    display: flex; }
+    display: flex;
+    padding-left: 0; }
     .list--horizontal .list__item {
       cursor: pointer;
       margin: 0 16px;

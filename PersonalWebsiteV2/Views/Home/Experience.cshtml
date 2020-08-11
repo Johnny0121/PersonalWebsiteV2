@@ -2,7 +2,6 @@
     ViewData["Title"] = "Experience";
 }
 
-
 <div class="cards-container flex">
     <partial name="MainComponent/_Profile" />
     <div id="content-card" class="card card--shadowed">
@@ -10,7 +9,7 @@
             <h1 class="card__heading"><strong>Experience</strong></h1>
             <p>Below presents a timeline of my experiences and current status.</p>
             <br />
-            <div class="button-group">
+            <div id="navigationButtons" class="button-group button-group--responsive">
                 <a class="button button--tertiary button--secondary" asp-controller="Home" asp-action="Index"><i class="icon icon--inline fas fa-caret-left"></i>Home</a>
                 <a class="button button--tertiary button--secondary" asp-controller="Home" asp-action="Academics">Academics</a>
                 <a href="#" class="button button--disabled  button--tertiary button--bg-disabled"><i class="icon icon--inline fas fa-download"></i>Resume</a>

@@ -36,9 +36,24 @@
 }
 
 .button-group {
-
     > .button:not(:last-child) {
         margin-right: $spacing;
         margin-bottom: $spacing;
+    }
+
+    &--responsive {
+        display: block;
+
+        > .button {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+
+            @media(min-width: 1200px) {
+                width: auto;
+                text-align: left;
+                box-sizing: inherit;
+            }
+        }
     }
 }
