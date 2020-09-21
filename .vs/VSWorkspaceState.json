@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PersonalWebsiteV2",
+    "\\PersonalWebsiteV2\\UI",
+    "\\PersonalWebsiteV2\\UI\\Components",
+    "\\PersonalWebsiteV2\\UI\\Components\\Button",
+    "\\PersonalWebsiteV2\\UI\\Components\\List",
+    "\\PersonalWebsiteV2\\Views",
+    "\\PersonalWebsiteV2\\Views\\Home",
+    "\\PersonalWebsiteV2\\wwwroot",
+    "\\PersonalWebsiteV2\\wwwroot\\css"
   ],
+  "SelectedNode": "\\PersonalWebsiteV2\\compilerconfig.json",
   "PreviewInSolutionExplorer": false
 }
