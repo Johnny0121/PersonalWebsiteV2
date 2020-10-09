@@ -2,9 +2,20 @@
     var stripe = Stripe("pk_test_51Ha85VCBa5lwqRr4DtLBAIp6CyIuD7URviKrOkHctcjZD0eGC5TMGcDRlzdKpYsZ9vM6v1QCBzwPjL9eBKa6gxzR006yktlLGT");
     var donation = { amount: 1.0 };
 
+    $('#donation-email').keyup(function (event) {
+        var emailRegex = /\S+@\S+\.\S+/;
+        if (emailRegex.test($(this).val())) {
+            $('#donation-continue').prop('disabled', false);
+        } else {
+            $('#donation-continue').prop('disabled', true);
+        }
+    });
+
     $('#donation-continue').click(function () {
         const requestObject = {
-            amount: donation.amount * 100
+            amount: donation.amount,
+            recipientemailaddress: $('#donation-email').val(),
+            description: $('#description').val() || 'No description provided'
         }
 
         fetch("/api/PaymentIntent", {
@@ -57,7 +68,7 @@
     var payWithCard = function(stripe, card, clientSecret) {
         loading(true);
         stripe.confirmCardPayment(clientSecret, {
-            receipt_email: document.getElementById('email').value,
+            receipt_email: document.getElementById('donation-email').value,
             payment_method: {
                 card: card
             }
@@ -119,7 +130,8 @@
     }
 
     return {
-        init: init
+        init: init,
+        stripe: stripe
     }
 }();
 

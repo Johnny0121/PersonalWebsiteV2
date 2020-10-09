@@ -33,11 +33,18 @@
       height: 700px; } }
 
 /*Stripe donation*/
+#payment-container #donation-email {
+  padding-left: 16px;
+  border-radius: 100px;
+  padding: 8px 8px 8px 16px; }
+  #payment-container #donation-email:focus {
+    outline: none; }
+
 #payment-form > #card-element {
   border: 2px solid #48525E;
   padding: 16px; }
 
-#payment-form > #email {
+#payment-form > .stripe-input {
   display: block;
   width: 100%;
   border: 2px solid #48525E;

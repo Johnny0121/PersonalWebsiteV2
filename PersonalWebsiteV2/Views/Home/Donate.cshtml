@@ -22,13 +22,14 @@
                 <div>
                     <label>You've selected: <span class="font-weight-bold text-primary valueSpan"></span></label>
                     <input type="range" class="custom-range" min="1" max="3" step="0.1" value="1" id="donation-slider">
-                    <button id="donation-continue" class="button button--secondary">Continue</button>
+                    <input id="donation-email" class="mr-2" type="text" placeholder="Email address"/>
+                    <button id="donation-continue" class="button button--secondary" disabled>Continue</button>
                 </div>
             </div>
             <div id="payment-form-container" class="card__content card__content--p-2">
                 <form id="payment-form">
                     <p id="card-error" role="alert"></p>
-                    <input type="text" id="email" placeholder="Email address" />
+                    <textarea id="description" class="stripe-input" rows="2" placeholder="Your message"></textarea>
                     <div id="card-element"><!--Stripe.js injects the Card Element--></div>
                     <button id="stripe-submit">
                         <div class="spinner hidden" id="spinner"></div>

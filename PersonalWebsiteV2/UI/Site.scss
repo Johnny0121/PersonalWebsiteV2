@@ -45,13 +45,25 @@
 }
 
 /*Stripe donation*/
+#payment-container {
+    #donation-email {
+        padding-left: $spacing;
+        border-radius: 100px;
+        padding: $spacing/2 $spacing/2 $spacing/2 $spacing;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
 #payment-form {
     > #card-element {
         border: 2px solid $disabled-colour;
         padding: $spacing;
     }
 
-    > #email {
+    > .stripe-input {
         display: block;
         width: 100%;
         border: 2px solid $disabled-colour;

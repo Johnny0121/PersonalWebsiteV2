@@ -87,6 +87,7 @@
   padding: 10.66667px 48px;
   border-radius: 50px;
   display: inline-block;
+  border: none;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out; }
   .button--bg-primary {

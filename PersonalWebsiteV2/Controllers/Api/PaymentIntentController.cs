@@ -14,8 +14,10 @@ namespace PersonalWebsiteV2.Controllers.Api
             var paymentIntents = new PaymentIntentService();
             var paymentIntent = paymentIntents.Create(new PaymentIntentCreateOptions
             {
-                Amount = request.Amount,
+                Amount = request.Amount * 100,
                 Currency = "gbp",
+                ReceiptEmail = request.RecipientEmailAddress,
+                Description = request.Description
             });
             return Json(new { clientSecret = paymentIntent.ClientSecret });
         }
