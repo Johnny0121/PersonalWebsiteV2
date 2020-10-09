@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "r9MHa0TURHvTZPO+wIg+C7OGPbAFnGmV0J2BUkYPSyvMKL7w53Yn53aqG4BivgB4z+qwMCa7bR+a17sKLx69BQ==",
+  "dgSpecHash": "Z2BqLN33vmwXccvYfJ3Tjz+CDYtC8wzJea8r0SPRWaVmXb/LUCSMPWq08jgcWZT6FBncASDeojalLfWoba8tbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\johnn\\Source\\Repos\\Johnny0121\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj",
   "expectedPackageFiles": [
@@ -35,7 +35,7 @@
     "C:\\Users\\johnn\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
-    "C:\\Users\\johnn\\.nuget\\packages\\stripe.net\\39.11.0\\stripe.net.39.11.0.nupkg.sha512",
+    "C:\\Users\\johnn\\.nuget\\packages\\stripe.net\\39.12.0\\stripe.net.39.12.0.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\system.composition\\1.0.31\\system.composition.1.0.31.nupkg.sha512",

@@ -658,7 +658,7 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
-      "Stripe.net/39.11.0": {
+      "Stripe.net/39.12.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
@@ -2494,10 +2494,10 @@
         "nuget.frameworks.nuspec"
       ]
     },
-    "Stripe.net/39.11.0": {
-      "sha512": "2ZtOcFxLTPqAtdXnIR70aKEnMcckG8FPJIDcMD+4hMdz87xDC6LBeCrErY4lQ1QMalC+kQTHGefhkB6XiPKhaw==",
+    "Stripe.net/39.12.0": {
+      "sha512": "WzP2YK+OXFi/AGpAjrdUXJMyG9VxRpEC1VOoDV0keZZenR7KiqHFw6mNwTWXMNhkzRj9YHF6zNyYsQJJshTKfQ==",
       "type": "package",
-      "path": "stripe.net/39.11.0",
+      "path": "stripe.net/39.12.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2509,7 +2509,7 @@
         "lib/netstandard2.0/Stripe.net.dll",
         "lib/netstandard2.0/Stripe.net.pdb",
         "lib/netstandard2.0/Stripe.net.xml",
-        "stripe.net.39.11.0.nupkg.sha512",
+        "stripe.net.39.12.0.nupkg.sha512",
         "stripe.net.nuspec"
       ]
     },
@@ -4333,7 +4333,7 @@
     ".NETCoreApp,Version=v3.1": [
       "BuildWebCompiler >= 1.12.394",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
-      "Stripe.net >= 39.11.0"
+      "Stripe.net >= 39.12.0"
     ]
   },
   "packageFolders": {
@@ -4383,7 +4383,7 @@
           },
           "Stripe.net": {
             "target": "Package",
-            "version": "[39.11.0, )"
+            "version": "[39.12.0, )"
           }
         },
         "imports": [
