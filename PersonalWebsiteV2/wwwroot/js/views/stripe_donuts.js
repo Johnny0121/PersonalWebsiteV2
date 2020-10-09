@@ -125,7 +125,7 @@
 
         slider.on('input change', () => {
             label.html('£' + Number.parseFloat(slider.val()).toFixed(2));
-            donation.amount = slider.val() * 100;
+            donation.amount = slider.val();
         });
     }
 
