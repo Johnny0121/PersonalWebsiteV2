@@ -30,14 +30,17 @@ namespace PersonalWebsiteV2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            StripeConfiguration.ApiKey = __Configuration["STRIPE_SECRET_KEY"];
 
             if (env.IsDevelopment())
             {
+                StripeConfiguration.ApiKey = "sk_test_51Ha85VCBa5lwqRr4ZzDXnYiswkg7PAb9Rv3MbZCIhFvkpWPKYlEOgMm2JL7qfasPfWBUO51m0gwqbGsym8u91txV00CZhWwEvR";
+
                 app.UseDeveloperExceptionPage();
             }
             else
             {
+                StripeConfiguration.ApiKey = __Configuration["STRIPE_SECRET_KEY"];
+
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
