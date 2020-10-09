@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Feed me a donut";
+}
+
+<div class="cards-container flex">
+    <partial name="MainComponent/_Profile" />
+    <div id="content-card" class="card card--shadowed">
+        <div class="card__header card__header--p-h-2 card__header--p-b-2">
+            <h1 class="card__heading"><strong>@ViewData["Title"]</strong></h1>
+            <p>The local Tescos at my flat sells these really tasty 80p donuts. If you're feeling generous, I would greatly appreciate any amount of donation. This page is just for a reason for me to use the Stripe API. Thank you!</p>
+            <div id="navigationButtons" class="button-group button-group--responsive">
+                <a class="button button--secondary" asp-controller="Home" asp-action="Index"><i class="icon icon--inline fas fa-caret-left"></i>Home</a>
+                <a class="button button--secondary" asp-controller="Home" asp-action="Experience">Experience</a>
+                <a class="button button--secondary" asp-controller="Home" asp-action="Academics">Academics</a>
+                <a href="#" class="button button--disabled  button--tertiary button--bg-disabled"><i class="icon icon--inline fas fa-download"></i>Resume</a>
+            </div>
+        </div>
+        <div id="payment-container">
+            <div class="card__content card__content--p-2 card__content--bg-grey">
+                <h1 class="title title--size-3 title-style-1"><strong> Select an amount you'd like to donate please</strong></h1>
+                <p>Please note that you will not be charged at this point in time. Once you continue, you'll be able to continue with the payment. Maximum donation is &pound;3.00.</p>
+                <div>
+                    <label>You've selected: <span class="font-weight-bold text-primary valueSpan"></span></label>
+                    <input type="range" class="custom-range" min="1" max="3" step="0.1" value="1" id="donation-slider">
+                    <button id="donation-continue" class="button button--secondary">Continue</button>
+                </div>
+            </div>
+            <div id="payment-form-container" class="card__content card__content--p-2">
+                <form id="payment-form">
+                    <p id="card-error" role="alert"></p>
+                    <input type="text" id="email" placeholder="Email address" />
+                    <div id="card-element"><!--Stripe.js injects the Card Element--></div>
+                    <button id="stripe-submit">
+                        <div class="spinner hidden" id="spinner"></div>
+                        <span id="button-text">Pay</span>
+                    </button>
+                    <br />
+                </form>
+            </div>
+        </div>
+        <div class="payment-result-container">
+            <div id="payment-success" class="result-message card__content card__content--p-2 card__content--bg-grey d-none">
+                <p class="d-flex justify-content-center"><i class="d-block fas fa-check-circle fa-5x text-success" style=""></i></p>
+                <p class="d-block text-center"><a class="link" href="https://bit.ly/2GGNeWz" target="_blank">Payment succeeded!</a></p>
+                <p id="payment-intent-id" class="payment-intent-id d-block text-center">Payment Intent ID: </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="~/js/views/stripe_donuts.js"></script>
+
+    <environment include="Development">
+        <script src="~/js/views/stripe_donuts.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/views/stripe_donuts.min.js"></script>
+    </environment>
+}
