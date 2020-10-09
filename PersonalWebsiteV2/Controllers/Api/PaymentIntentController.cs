@@ -12,12 +12,19 @@ namespace PersonalWebsiteV2.Controllers.Api
         public ActionResult Create(DonationRequest request)
         {
             var paymentIntents = new PaymentIntentService();
-            var paymentIntent = paymentIntents.Create(new PaymentIntentCreateOptions
+
+            if (decimal.TryParse(request.Amount, out decimal amount))
             {
-                Amount = request.Amount * 100,
-                Currency = "gbp"
-            });
-            return Json(new { clientSecret = paymentIntent.ClientSecret });
+                var paymentIntent = paymentIntents.Create(new PaymentIntentCreateOptions
+                {
+                    Amount = (long)amount * 100,
+                    Currency = "gbp"
+                });
+                
+                return Json(new { clientSecret = paymentIntent.ClientSecret });
+            }
+
+            return Json(0);
         }
     }
 }

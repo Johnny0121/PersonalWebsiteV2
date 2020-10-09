@@ -1,6 +1,6 @@
 ﻿var stripeDonutModule = function () {
     var stripe = Stripe("pk_test_51Ha85VCBa5lwqRr4DtLBAIp6CyIuD7URviKrOkHctcjZD0eGC5TMGcDRlzdKpYsZ9vM6v1QCBzwPjL9eBKa6gxzR006yktlLGT");
-    var donation = { amount: 1.0 };
+    var donation = { amount: "1.0" };
 
     $('#donation-email').keyup(function (event) {
         var emailRegex = /\S+@\S+\.\S+/;
@@ -12,22 +12,17 @@
     });
 
     $('#donation-continue').click(function () {
-        const requestObject = {
-            amount: donation.amount,
-            recipientemailaddress: $('#donation-email').val(),
-            description: $('#description').val() || 'No description provided'
-        }
+        $('#button-text').text(`Pay £${Number.parseFloat(donation.amount).toFixed(2)}`);
 
         fetch("/api/PaymentIntent", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(requestObject)
+            body: JSON.stringify(donation)
         })
             .then(function (result) {
                 $('#payment-form-container').show();
-
                 return result.json();
             })
             .then(function (data) {
@@ -68,7 +63,7 @@
     var payWithCard = function(stripe, card, clientSecret) {
         loading(true);
         stripe.confirmCardPayment(clientSecret, {
-            receipt_email: document.getElementById('donation-email').value,
+            receipt_email: $('#donation-email').val(),
             payment_method: {
                 card: card
             }
