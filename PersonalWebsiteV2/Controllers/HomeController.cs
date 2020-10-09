@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PersonalWebsiteV2.Models;
+using System.Diagnostics;
 
 namespace PersonalWebsiteV2.Controllers
 {
@@ -19,6 +15,11 @@ namespace PersonalWebsiteV2.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Donate()
         {
             return View();
         }

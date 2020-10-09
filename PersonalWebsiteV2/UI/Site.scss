@@ -44,6 +44,52 @@
     }
 }
 
+/*Stripe donation*/
+#payment-form {
+    > #card-element {
+        border: 2px solid $disabled-colour;
+        padding: $spacing;
+    }
+
+    > #email {
+        display: block;
+        width: 100%;
+        border: 2px solid $disabled-colour;
+        margin-bottom: $spacing;
+        padding: $spacing/2;
+    }
+
+    > #stripe-submit {
+        margin-top: $spacing;
+        background: #5469d4;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        border-radius: 0 0 4px 4px;
+        border: 0;
+        padding: $spacing*3/4 $spacing;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        display: block;
+        transition: all 0.2s ease;
+        box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+        width: 100%;
+
+        &:hover {
+            filter: contrast(115%);
+        }
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
+    }
+}
+
+#payment-intent-id {
+    margin-top: -$spacing;
+}
+
 @import 'Components/Flex/_Flex.scss';
 @import 'Components/Button/_Button.scss';
 @import 'Components/Card/_Card.scss';

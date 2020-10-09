@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\johnn\\Source\\Repos\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj": {}
+    "C:\\Users\\johnn\\Source\\Repos\\Johnny0121\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\johnn\\Source\\Repos\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj": {
+    "C:\\Users\\johnn\\Source\\Repos\\Johnny0121\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johnn\\Source\\Repos\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj",
+        "projectUniqueName": "C:\\Users\\johnn\\Source\\Repos\\Johnny0121\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj",
         "projectName": "PersonalWebsiteV2",
-        "projectPath": "C:\\Users\\johnn\\Source\\Repos\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj",
+        "projectPath": "C:\\Users\\johnn\\Source\\Repos\\Johnny0121\\PersonalWebsiteV2\\PersonalWebsiteV2\\PersonalWebsiteV2.csproj",
         "packagesPath": "C:\\Users\\johnn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johnn\\Source\\Repos\\PersonalWebsiteV2\\PersonalWebsiteV2\\obj\\",
+        "outputPath": "C:\\Users\\johnn\\Source\\Repos\\Johnny0121\\PersonalWebsiteV2\\PersonalWebsiteV2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\johnn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -44,6 +41,14 @@
             "BuildWebCompiler": {
               "target": "Package",
               "version": "[1.12.394, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[39.11.0, )"
             }
           },
           "imports": [

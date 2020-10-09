@@ -20,9 +20,12 @@
 
   <ItemGroup>
     <PackageReference Include="BuildWebCompiler" Version="1.12.394" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Stripe.net" Version="39.11.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\Response\" />
     <Folder Include="wwwroot\resource\media\images\icons\" />
   </ItemGroup>
 

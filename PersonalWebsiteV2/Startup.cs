@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Stripe;
 
 namespace PersonalWebsiteV2
 {
@@ -15,10 +16,10 @@ namespace PersonalWebsiteV2
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            __Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration __Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -29,6 +30,8 @@ namespace PersonalWebsiteV2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            StripeConfiguration.ApiKey = __Configuration["STRIPE_SECRET_KEY"];
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

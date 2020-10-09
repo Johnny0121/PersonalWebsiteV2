@@ -12,11 +12,24 @@
     @include backgroundColour;
     @include colour;
 
+    &:hover {
+        color: $tertiary-colour;
+    }
+
     &--primary {
         background-color: $primary-colour;
 
         &:hover {
             background-color: darken($primary-colour, 10%);
+        }
+    }
+
+    &--secondary {
+        background-color: $secondary-colour;
+        color: $tertiary-colour;
+
+        &:hover {
+            background-color: darken($secondary-colour, 10%);
         }
     }
 
