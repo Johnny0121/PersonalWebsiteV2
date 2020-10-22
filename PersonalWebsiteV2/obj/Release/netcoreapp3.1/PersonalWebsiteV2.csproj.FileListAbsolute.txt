@@ -173,3 +173,4 @@ C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\R
 C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\Release\netcoreapp3.1\PersonalWebsiteV2.dll
 C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\Release\netcoreapp3.1\PersonalWebsiteV2.pdb
 C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\Release\netcoreapp3.1\PersonalWebsiteV2.genruntimeconfig.cache
+C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\Release\netcoreapp3.1\Razor\Views\Academics\Year4.cshtml.g.cs

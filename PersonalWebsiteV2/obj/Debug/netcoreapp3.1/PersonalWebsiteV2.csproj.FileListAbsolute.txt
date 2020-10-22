@@ -172,3 +172,4 @@ C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\bin\D
 C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\Debug\netcoreapp3.1\PersonalWebsiteV2.csproj.CoreCompileInputs.cache
 C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\Debug\netcoreapp3.1\PersonalWebsiteV2.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Donate.cshtml.g.cs
+C:\Users\johnn\Source\Repos\Johnny0121\PersonalWebsiteV2\PersonalWebsiteV2\obj\Debug\netcoreapp3.1\Razor\Views\Academics\Year4.cshtml.g.cs
