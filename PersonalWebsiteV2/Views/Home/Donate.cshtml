@@ -17,7 +17,7 @@
         </div>
         <div id="payment-container">
             <div class="card__content card__content--p-2 card__content--bg-grey">
-                <h1 class="title title--size-3 title-style-1"><strong> Select an amount you'd like to donate please</strong></h1>
+                <h1 class="title title--size-3 title-style-1"><strong> Select an amount you'd like to donate please via Stripe</strong></h1>
                 <p>Please note that you will not be charged at this point in time. Once you continue, you'll be able to continue with the payment. Maximum donation is &pound;3.00.</p>
                 <div>
                     <label>You've selected: <span class="font-weight-bold text-primary valueSpan"></span></label>
@@ -36,6 +36,11 @@
                     </button>
                     <br />
                 </form>
+                <hr />
+            </div>
+            <div class="card__content card__content--p-2">
+                <h1 class="title title--size-3 title-style-1"><strong> Or via Bitcoin! (Preferred)</strong></h1>
+                <p><strong>Bitcoin Address:</strong> <span id="bitcoin-address">3MRCtMvAX4wau23SGT7WRzRHHXvDLavVCy</span> (<span class="link" onclick="copyToClipboard('bitcoin-address'); changeText(this, 'Copied')">Copy</span>)</p>
             </div>
         </div>
         <div class="payment-result-container">
@@ -56,4 +61,13 @@
     <environment exclude="Development">
         <script src="~/js/views/stripe_donuts.min.js"></script>
     </environment>
+    <script>
+        function copyToClipboard(id) {
+            navigator.clipboard.writeText(document.getElementById(id).innerText);
+        }
+
+        function changeText(elem, text) {
+            elem.innerText = text;
+        }
+    </script>
 }

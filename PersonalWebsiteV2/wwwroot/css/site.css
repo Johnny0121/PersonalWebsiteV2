@@ -617,6 +617,7 @@
     color: #378AD3; }
 
 .link {
+  cursor: pointer;
   text-decoration: none;
   color: #378AD3; }
   .link--primary {
